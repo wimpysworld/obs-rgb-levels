@@ -1,6 +1,7 @@
 /*
-Plugin Name
-Copyright (C) <Year> <Developer> <Email Address>
+RGB Levels Filter - modelled on color-key-filter.c in obs distribution
+Copyright (C) <2020> petrifiedpenguin <ajscholl@gmail.com>
+Copyright (C) <2023> Martin Wimpress <code@wimpress.io>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

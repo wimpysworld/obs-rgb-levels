@@ -41,14 +41,14 @@
     },
     "platformConfig": {
         "macos": {
-            "bundleId": "com.example.obs-plugintemplate"
+            "bundleId": "com.wimpysworld.obs-rgb-levels-filter",
         }
     },
-    "name": "obs-plugintemplate",
-    "version": "1.0.0",
-    "author": "Your Name Here",
-    "website": "https://example.com",
-    "email": "me@example.com",
+    "name": "obs-rgb-levels-filter",
+    "version": "1.0.1",
+    "author": "Martin Wimpress",
+    "website": "https://github.com/wimpysworld/obs-rgb-levels",
+    "email": "code@wimpress.io",
     "uuids": {
         "macosPackage": "00000000-0000-0000-0000-000000000000",
         "macosInstaller": "00000000-0000-0000-0000-000000000000",
