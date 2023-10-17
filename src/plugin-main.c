@@ -20,8 +20,7 @@ with this program. If not, see <https://www.gnu.org/licenses/>
 #include <obs-module.h>
 #include <graphics/vec3.h>
 #include <graphics/vec4.h>
-#include <plugin-support.h>
-#include <stdio.h>
+#include "plugin-support.h"
 
 #define SETTINGS_RED_MIN "red_min"
 #define SETTINGS_RED_MAX "red_max"
