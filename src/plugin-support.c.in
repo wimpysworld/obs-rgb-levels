@@ -1,6 +1,5 @@
 /*
-RGB Levels Filter - modelled on color-key-filter.c in obs distribution
-Copyright (C) <2020> petrifiedpenguin <ajscholl@gmail.com>
+RGB Levels Filter
 Copyright (C) <2023> Martin Wimpress <code@wimpress.io>
 
 This program is free software; you can redistribute it and/or modify
