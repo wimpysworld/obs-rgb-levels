@@ -30,8 +30,8 @@ with this program. If not, see <https://www.gnu.org/licenses/>
 #define SETTINGS_BLUE_MIN "blue_min"
 #define SETTINGS_BLUE_MAX "blue_max"
 
-
-#define MAX(a, b) (((uint32_t)(a)) > ((uint32_t)(b)) ? ((uint32_t)(a)) : ((uint32_t)(b)))
+#define MAX(a, b) \
+	(((uint32_t)(a)) > ((uint32_t)(b)) ? ((uint32_t)(a)) : ((uint32_t)(b)))
 
 struct rgb_levels_filter_data {
 	obs_source_t *context;
@@ -55,14 +55,19 @@ static inline void rgb_levels_update(void *data, obs_data_t *settings)
 	struct rgb_levels_filter_data *filter = data;
 
 	uint32_t r_min = (uint32_t)obs_data_get_int(settings, SETTINGS_RED_MIN);
-	uint32_t g_min = (uint32_t)obs_data_get_int(settings, SETTINGS_GREEN_MIN);
-	uint32_t b_min = (uint32_t)obs_data_get_int(settings, SETTINGS_BLUE_MIN);
+	uint32_t g_min =
+		(uint32_t)obs_data_get_int(settings, SETTINGS_GREEN_MIN);
+	uint32_t b_min =
+		(uint32_t)obs_data_get_int(settings, SETTINGS_BLUE_MIN);
 	uint32_t r_max =
-		MAX(r_min + 1, (uint32_t)obs_data_get_int(settings, SETTINGS_RED_MAX));
+		MAX(r_min + 1,
+		    (uint32_t)obs_data_get_int(settings, SETTINGS_RED_MAX));
 	uint32_t g_max =
-		MAX(g_min + 1, (uint32_t)obs_data_get_int(settings, SETTINGS_GREEN_MAX));
+		MAX(g_min + 1,
+		    (uint32_t)obs_data_get_int(settings, SETTINGS_GREEN_MAX));
 	uint32_t b_max =
-		MAX(b_min + 1, (uint32_t)obs_data_get_int(settings, SETTINGS_BLUE_MAX));
+		MAX(b_min + 1,
+		    (uint32_t)obs_data_get_int(settings, SETTINGS_BLUE_MAX));
 
 	vec3_set(&filter->rgb_min, r_min / 255.0f, g_min / 255.0f,
 		 b_min / 255.0f);
