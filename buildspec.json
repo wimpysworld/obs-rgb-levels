@@ -33,11 +33,11 @@
     },
     "platformConfig": {
         "macos": {
-            "bundleId": "com.wimpysworld.obs-rgb-levels-filter",
+            "bundleId": "com.wimpysworld.obs-rgb-levels-filter"
         }
     },
     "name": "obs-rgb-levels-filter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Martin Wimpress",
     "website": "https://github.com/wimpysworld/obs-rgb-levels",
     "email": "code@wimpress.io",
