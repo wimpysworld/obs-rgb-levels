@@ -15,6 +15,6 @@ plugin by [petrifiedpenguin](https://github.com/petrifiedpenguin), wrapped in
 the [OBS Plugin Template](https://github.com/obsproject/obs-plugintemplate) so
 that it builds 🧱 from source against current versions of OBS Studio.
 
-**This project is a work in progress**, it builds for Linux and is included in
-[OBS Studio Portable](https://github.com/wimpysworld/obs-studio-portable) but
-macOS and Windows need some work 🩹
+**This project is a work in progress**, it builds for Linux 🐧 and is included in
+[OBS Studio Portable](https://github.com/wimpysworld/obs-studio-portable).
+Windows 🪟 and macOS 🍏 build in CI but macOS fails the packaging step.
