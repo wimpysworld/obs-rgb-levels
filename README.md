@@ -10,11 +10,16 @@ simple effects filter to adjust RGB channels independently. Useful for
 correcting poor quality webcams or used in conjunction with other filters to
 create special effects ✨
 
+## Requirements
+
+- OBS Studio 31.0.0 or newer
+
+## History
+
 It is the continuation of the original [obs-rgb-levels-filter](https://github.com/petrifiedpenguin/obs-rgb-levels-filter)
 plugin by [petrifiedpenguin](https://github.com/petrifiedpenguin), wrapped in
 the [OBS Plugin Template](https://github.com/obsproject/obs-plugintemplate) so
 that it builds 🧱 from source against current versions of OBS Studio.
 
-**This project is a work in progress**, it builds for Linux 🐧 and is included in
-[OBS Studio Portable](https://github.com/wimpysworld/obs-studio-portable).
-Windows 🪟 and macOS 🍏 build in CI but are untested.
+**This project is only tested on Linux 🐧**.
+It is built and released for Windows 🪟 and macOS 🍏 and should work fine, if it doesn't patches are welcome 🩹
