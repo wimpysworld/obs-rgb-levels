@@ -38,7 +38,7 @@
     },
     "name": "obs-rgb-levels",
     "displayName": "RGB levels plugin for OBS Studio",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Martin Wimpress",
     "website": "https://github.com/wimpysworld/obs-rgb-levels",
     "email": "code@wimpress.io",
