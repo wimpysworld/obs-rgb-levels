@@ -6,13 +6,37 @@
 # RGB Levels Filter
 
 This is a plugin for [OBS Studio](https://obsproject.com/) that adds a simple
-simple effects filter to adjust RGB channels independently. Useful for
+effects filter to adjust RGB channels independently. Useful for
 correcting poor quality webcams or used in conjunction with other filters to
 create special effects ✨
 
 ## Requirements
 
 - OBS Studio 31.0.0 or newer
+
+## Building from Source
+
+You'll need CMake 3.28+, a C compiler, and the OBS Studio development libraries. See the [OBS Plugin Template](https://github.com/obsproject/obs-plugintemplate) for detailed environment setup.
+
+**Linux:**
+```bash
+cmake --preset ubuntu-x86_64
+cmake --build --preset ubuntu-x86_64
+```
+
+**Windows:**
+```bash
+cmake --preset windows-x64
+cmake --build --preset windows-x64
+```
+
+**macOS:**
+```bash
+cmake --preset macos
+cmake --build --preset macos
+```
+
+A Nix flake is available for development: `nix develop`
 
 ## History
 
